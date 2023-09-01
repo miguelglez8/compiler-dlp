@@ -1,2 +1,2 @@
 # compiler-dlp
-DLP compiler project using Java and ANTLR4 
+Compiler used for the subject of programming language design using ANTLR4 and java, where you can see the four general phases of a real compiler
