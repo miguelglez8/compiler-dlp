@@ -1,0 +1,42 @@
+CATEGORIES
+operacion, sentencia, expresion, tipo
+
+NODES
+programa -> operaciones:operacion*;
+
+defVariable:operacion -> tipo nombre:string;
+defStruct:operacion -> nombre:string atributos:campo*;
+defFuncion:operacion -> nombre:string parametros:defVariable* retorno:tipo variablesLocales:defVariable* sentencias:sentencia*;
+
+campo:operacion -> tipo nombre:string;
+
+if:sentencia -> condicionTrue:expresion sentenciasTrue:sentencia*;
+ifelse:sentencia -> condicionTrue:expresion sentenciasTrue:sentencia* sentenciasFalse:sentencia*;
+while:sentencia -> condicionWhile:expresion sentencia*;
+read:sentencia -> expresion;
+print:sentencia -> expresion;
+printsp:sentencia -> expresion;
+println:sentencia -> expresion;
+return:sentencia -> expresion;
+asignacion:sentencia -> left:expresion right:expresion;
+llamadaFuncionS:sentencia -> nombre:string parametros:expresion*;
+
+arithmeticExpresion:expresion -> left:expresion operator:string right:expresion;
+logicExpresion:expresion -> left:expresion operator:string right:expresion;
+relacionalExpresion:expresion -> left:expresion operator:string right:expresion;
+notExpresion:expresion -> expresion;
+accesoArray:expresion -> left:expresion right:expresion;
+accesoCampo:expresion -> expresion campo:string;
+llamadaFuncionE:expresion -> nombre:string parametros:expresion*;
+cast:expresion -> casteo:int expresion;
+variable:expresion -> nombre:string;
+intConstant:expresion -> valor:string;
+realConstant:expresion -> valor:string;
+charConstant:expresion -> valor:string;
+
+intType:tipo -> ;
+floatType:tipo -> ;
+charType:tipo -> ;
+voidType: tipo -> ;
+stringType:tipo -> nombre:string;
+vectorType:tipo -> tamaño:int tipo;
