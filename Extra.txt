@@ -1,0 +1,11 @@
+TAREAS EXTRA COMPILADOR:
+- Statement MasIgual (+=)
+- Statement Incremento (i++)
+- Tipo Boolean
+- Statement For
+- Statement DoWhile
+- Statement Switch
+- Operador Ternario (?:)
+- a,b,c = v (Array)
+- Expresion Asignación Múltiple
+- Pasar punteros en funciones

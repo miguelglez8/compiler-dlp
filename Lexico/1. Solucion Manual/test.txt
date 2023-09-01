@@ -1,0 +1,3 @@
+float f2;
+
+print a[0] - 2.5;
