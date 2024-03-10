@@ -1,7 +1,0 @@
-/* Ejemplo */
-
-float f_2;
-
-print a - 2.5;     // Leer del teclado
-
-/* Final */
