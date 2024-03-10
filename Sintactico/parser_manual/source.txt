@@ -1,3 +1,0 @@
-type myInt: int
-
-var a, b, c: int
