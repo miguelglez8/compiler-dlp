@@ -1,9 +1,0 @@
-main() {
-	var a:int;	
-	var b:int;
-	var c:int;
-	
-	print 3;
-	println ;
-	printsp ;
-}
